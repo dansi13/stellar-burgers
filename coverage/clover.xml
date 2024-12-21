@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734643076159" clover="3.2.0">
-  <project timestamp="1734643076159" name="All files">
-    <metrics statements="812" coveredstatements="597" conditionals="56" coveredconditionals="47" methods="51" coveredmethods="17" elements="919" coveredelements="661" complexity="0" loc="812" ncloc="812" packages="2" files="7" classes="7"/>
+<coverage generated="1734774913935" clover="3.2.0">
+  <project timestamp="1734774913935" name="All files">
+    <metrics statements="849" coveredstatements="634" conditionals="56" coveredconditionals="47" methods="51" coveredmethods="17" elements="956" coveredelements="698" complexity="0" loc="849" ncloc="849" packages="3" files="8" classes="8"/>
+    <package name="services">
+      <metrics statements="37" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="store.ts" path="/Users/daniilsivachenko/prog/stellar-burgers/src/services/store.ts">
+        <metrics statements="37" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="services.slices">
       <metrics statements="530" coveredstatements="476" conditionals="52" coveredconditionals="44" methods="33" coveredmethods="15"/>
       <file name="BurgerConstructorSlice.ts" path="/Users/daniilsivachenko/prog/stellar-burgers/src/services/slices/BurgerConstructorSlice.ts">
