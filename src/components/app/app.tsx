@@ -13,7 +13,13 @@ import {
 import '../../index.css';
 import styles from './app.module.css';
 import { AppHeader, Modal, IngredientDetails, OrderInfo } from '@components';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  useNavigate,
+  useLocation,
+  useMatch
+} from 'react-router-dom';
 import { useDispatch } from '../../services/store';
 import { useEffect } from 'react';
 import { getIngredients } from '../../services/slices/IngredientsSlice';
@@ -24,6 +30,10 @@ const App = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
+
+  const profileMatch = useMatch('/profile/orders/:number')?.params.number;
+  const feedMatch = useMatch('/feed/:number')?.params.number;
+  const orderNumber = profileMatch || feedMatch;
 
   const closeModal = () => {
     navigate(-1);
@@ -42,7 +52,17 @@ const App = () => {
       <AppHeader />
       <Routes location={background || location}>
         <Route path='/' element={<ConstructorPage />} />
-        <Route path='/ingredients/:id' element={<IngredientDetails />} />
+        <Route
+          path='/ingredients/:id'
+          element={
+            <div className={styles.detailPageWrap}>
+              <p className={`text text_type_main-large ${styles.detailHeader}`}>
+                Детали ингредиента
+              </p>
+              <IngredientDetails />
+            </div>
+          }
+        />
         <Route path='/feed' element={<Feed />} />
         <Route
           path='/login'
@@ -94,7 +114,19 @@ const App = () => {
         />
         {/*Роуты для рендера контента по условию отсутствия фонового состояния, то есть когда пользователь открывает прямую ссылку*/}
         <Route path='*' element={<NotFound404 />} />
-        <Route path='/feed/:number' element={<OrderInfo />} />
+        <Route
+          path='/feed/:number'
+          element={
+            <div className={styles.detailPageWrap}>
+              <p
+                className={`text text_type_digits-default ${styles.detailHeader}`}
+              >
+                #{orderNumber && orderNumber.padStart(6, '0')}
+              </p>
+              <OrderInfo />
+            </div>
+          }
+        />
         <Route path='/ingredients/:id' element={<IngredientDetails />} />
         <Route
           path='/profile/orders/:number'
@@ -111,7 +143,10 @@ const App = () => {
           <Route
             path='/feed/:number'
             element={
-              <Modal title={''} onClose={closeModal}>
+              <Modal
+                title={`#${location.pathname.split('/').slice(2)}`}
+                onClose={closeModal}
+              >
                 <OrderInfo />
               </Modal>
             }

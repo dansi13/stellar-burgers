@@ -1,0 +1,103 @@
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "60d3b41abdacab0026a733c7",
+      "name": "Краторная булка N-200i",
+      "type": "bun",
+      "proteins": 80,
+      "fat": 24,
+      "carbohydrates": 53,
+      "calories": 420,
+      "price": 1255,
+      "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+      "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "60d3b41abdacab0026a733c6",
+      "name": "Филе лосось",
+      "type": "main",
+      "proteins": 22,
+      "fat": 26,
+      "carbohydrates": 4,
+      "calories": 20,
+      "price": 22,
+      "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+      "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "60d3b41abdacab0026a733c5",
+      "name": "Соус Spicy-X",
+      "type": "sauce",
+      "proteins": 30,
+      "fat": 20,
+      "carbohydrates": 40,
+      "calories": 30,
+      "price": 90,
+      "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+      "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "60d3b41abdacab0026a733c4",
+      "name": "Соус фирменный Space Sauce",
+      "type": "sauce",
+      "proteins": 50,
+      "fat": 22,
+      "carbohydrates": 11,
+      "calories": 14,
+      "price": 80,
+      "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+      "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "60d3b41abdacab0026a733c3",
+      "name": "Мясо бессмертных моллюсков Protostomia",
+      "type": "main",
+      "proteins": 433,
+      "fat": 244,
+      "carbohydrates": 33,
+      "calories": 420,
+      "price": 1337,
+      "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+      "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "60d3b41abdacab0026a733c2",
+      "name": "Соус традиционный галактический",
+      "type": "sauce",
+      "proteins": 42,
+      "fat": 24,
+      "carbohydrates": 42,
+      "calories": 99,
+      "price": 15,
+      "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png.png",
+      "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "60d3b41abdacab0026a733c1",
+      "name": "Грибы из марсианского камня",
+      "type": "main",
+      "proteins": 80,
+      "fat": 24,
+      "carbohydrates": 53,
+      "calories": 240,
+      "price": 80,
+      "image": "https://code.s3.yandex.net/react/code/meat-05.png",
+      "image_mobile": "https://code.s3.yandex.net/react/code/meat-05-mobile.png",
+      "image_large": "https://code.s3.yandex.net/react/code/meat-05-large.png",
+      "__v": 0
+    }
+  ]
+}

@@ -11,7 +11,6 @@ export const IngredientsCategory = forwardRef<
 >(({ title, titleRef, ingredients, ...rest }, ref) => {
   const burgerConstructor = useSelector(getConstructorItems);
 
-  //счетчик для подсчета количества элементов массива конструктора, который мы получили выше. Если элемент === bun, то значение переменной counters*2
   const ingredientsCounters = useMemo(() => {
     const { bun, ingredients } = burgerConstructor;
     const counters: { [key: string]: number } = {};
@@ -20,7 +19,7 @@ export const IngredientsCategory = forwardRef<
       counters[ingredient._id]++;
     });
     if (bun) counters[bun._id] = 2;
-    return counters; //объект counters содержит точное количество каждого ингредиента
+    return counters;
   }, [burgerConstructor]);
 
   return (
